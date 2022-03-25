@@ -17,8 +17,8 @@ const TourPackage = () => {
         { id: 9, name: 'sikkim_6_days', price: 9000, image: '../images/sikkim.jpg' },
     ]
     return (
-        <div>
-            <h1>all package here</h1>
+        <div className=" row container">
+
             {
                 tourPackages.map(tourPackage => <SinglePackage key={tourPackage.id}
                     tourPackage={tourPackage}
