@@ -44,7 +44,7 @@ function App() {
       </div> */}
 
       <h1>Welcome to Travel with MH</h1>
-      <div className="d-flex">
+      <div className="d-flex div-main">
         <div className="container row">
           {
             tourPackages.map(tourPackage =>
@@ -59,27 +59,15 @@ function App() {
 
       <Accordion>
         <Accordion.Item eventKey="0">
-          <Accordion.Header>Accordion Item #1</Accordion.Header>
+          <Accordion.Header>How react works?</Accordion.Header>
           <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-            est laborum.
+            React is a declarative js libray for web ui.React has many kind of components.React has virtual dom to change real dom.We use react components to do what we want to see in Ui.react efficiently update with rerender our expected conponents. <a href='https://www.google.com/search?q=how+react+works&oq=&aqs=chrome.0.69i59i450l8.506091334j0j7&sourceid=chrome&ie=UTF-8'>read more</a>
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="1">
-          <Accordion.Header>Accordion Item #2</Accordion.Header>
+          <Accordion.Header>How use State works?</Accordion.Header>
           <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-            est laborum.
+            usestate declears "state variable".It,s preserve value by calling function.And the state variablesa preservew by react.Only arguments hook in the initial state.We can keep a number or string that we needed.Use state returns a state and a function that update the state.Sometimes we be wonders becouse why usestate not to call create state. <a href='https://reactjs.org/docs/hooks-state.html'>read more.</a>
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>

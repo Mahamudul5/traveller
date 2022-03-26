@@ -1,10 +1,19 @@
 .fav-part{
     width: 200px;
-    height: 400px;
+    height: 1300px;
     background-color:azure;
-    margin-top: 20px;
-    margin-right: 10px;
+    margin-top: 10px;
+    margin-right: 50px;
     position: sticky;
     border: 3px solid gray;
     
 }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .fav-part{
+        margin-left: 35px;
+    width: 300px;
+    height: 300px;
+    
+    }
+  }

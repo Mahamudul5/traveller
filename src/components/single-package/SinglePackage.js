@@ -9,7 +9,7 @@ const SinglePackage = (props) => {
     return (
 
         <div className='col-md-4'>
-            <div className="card p-3 m-3 border">
+            <div className="card p-2 m-2 border">
                 <img className='img-fluid ' src={image} alt="" />
                 <h4>package Name:{name}</h4>
                 <h5>tour Cost: {price}</h5>
