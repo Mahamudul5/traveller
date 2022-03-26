@@ -1,0 +1,10 @@
+.fav-part{
+    width: 200px;
+    height: 400px;
+    background-color:azure;
+    margin-top: 20px;
+    margin-right: 10px;
+    position: sticky;
+    border: 3px solid gray;
+    
+}
