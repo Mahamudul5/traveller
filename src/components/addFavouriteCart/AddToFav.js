@@ -2,9 +2,10 @@ import React from 'react';
 import './addToFav.css'
 import '../../App'
 
-const AddToFav = ({ cart }) => {
-
-
+const AddToFav = ({ cart, clearAll }) => {
+    // const { clearAll } = props;
+    // const { cart } = props.cart;
+    console.log(cart);
 
     return (
         <div className='fav-part'>
@@ -16,7 +17,7 @@ const AddToFav = ({ cart }) => {
 
             {/* <p>Favourite item:{cart.length}</p>  */}
             <button className='btn btn-primary mt-2 p-1'>choose one</button><br />
-            <button className='btn btn-primary mt-2 p-1'>Clear all</button>
+            <button onClick={clearAll} className='btn btn-primary mt-2 p-1'>Clear all</button>
         </div>
     );
 };
