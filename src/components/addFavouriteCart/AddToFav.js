@@ -1,8 +1,9 @@
 import React from 'react';
 import './addToFav.css'
 import '../../App'
+import ChooseOne from '../chooseOne/ChooseOne';
 
-const AddToFav = ({ cart, clearAll }) => {
+const AddToFav = ({ cart, clearAll, handleChooseForMe }) => {
     // const { clearAll } = props;
     // const { cart } = props.cart;
     console.log(cart);
@@ -16,8 +17,9 @@ const AddToFav = ({ cart, clearAll }) => {
             </div>
 
             {/* <p>Favourite item:{cart.length}</p>  */}
-            <button className='btn btn-primary mt-2 p-1'>choose one</button><br />
+            <button onClick={() => handleChooseForMe()} className='btn btn-primary mt-2 p-1'>choose one</button><br />
             <button onClick={clearAll} className='btn btn-primary mt-2 p-1'>Clear all</button>
+            <ChooseOne cart={cart}></ChooseOne>
         </div>
     );
 };

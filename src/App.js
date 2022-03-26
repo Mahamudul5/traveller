@@ -28,10 +28,26 @@ function App() {
     setCart(newCart);
     console.log(cart);
   }
+
+  const getRendomCart = (min, max) => {
+    let rendom1 = max - min + 1;
+    let rendom2 = Math.random() * rendom1;
+    let result = Math.floor(rendom2) + min;
+    return result;
+  }
+  const handleChooseForMe = (cart) => {
+    let index = getRendomCart(0, cart.length);
+    const rendomCart = cart[index];
+    if (rendomCart !== undefined) {
+      setCart(rendomCart);
+    }
+    console.log(setCart);
+  }
   // console.log(props);
   const clearAll = () => {
     setCart([]);
   }
+
 
 
   return (
@@ -53,7 +69,7 @@ function App() {
               ></SinglePackage>)
           }
         </div>
-        <AddToFav cart={cart} clearAll={clearAll}></AddToFav>
+        <AddToFav cart={cart} clearAll={clearAll} handleChooseForMe={handleChooseForMe}></AddToFav>
       </div>
 
 
